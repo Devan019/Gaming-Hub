@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+#startTickMark {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.bingo, .choose, .forpc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.bingo {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: #fff;
+}
+.choose, .forpc {
+    height: 100px;
+    width: 100px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.choose:hover, .forpc:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+.over {
+    text-decoration: line-through;
+    font-size: 2em;
+    background-color: #333;
+    color: #fff;
+}
+
+.pcbingo {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #2196f3;
+    color: #fff;
+}
+.pcbingo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pcbingo, .forpc {
+    border: 2px solid #2196f3;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #45a049;
+}
+button:active {
+    background-color: #397d3f;
+}
+.display {
+    display: none;
+}

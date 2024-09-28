@@ -1,0 +1,47 @@
+.b{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 20px;
+    justify-content: center;
+}
+.win{
+    font-size: x-large;
+}
+.new{
+    position: relative;
+    left: px;
+    bottom: px;
+    top: 20px;
+    font-size: 20px;
+    border-radius: 7%;
+    color: rgb(179, 255, 0);
+    background:blue;
+}
+.button{
+    border-radius: 10px;
+    background: rgba(231, 231, 80, 0.836);
+    font-size: 50px;
+    color: #000;
+}
+.h{
+  
+    text-decoration: underline;
+    color: blue;
+}
+body{
+    background: burlywood;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.reset{
+    position: relative;
+}
+.line{
+    text-decoration: line-through;
+}
+.btn{
+    background: white;
+}

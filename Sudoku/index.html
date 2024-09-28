@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            display : grid;
+            grid-template-rows: repeat(9 , 4rem);
+            grid-template-columns: repeat(9 , 4rem);
+        }
+        .main div{
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:xx-large;
+        }
+        .both{
+            border-bottom:2px solid;
+            border-right:2px solid;
+        }
+        .bottom_r{
+            border-bottom:5px solid red ;
+        }
+        .right_r{
+            border-right: 5px solid red;
+        }
+        .bottom_b{
+            border-bottom: 2px solid black;
+        }
+        .remove{
+            border-bottom: none;
+        }
+        .spno{
+            color: blue;
+        }
+        .op{
+            color: black;
+            font-size: x-large;
+        }
+        .input{
+            width: 3rem;
+            height: 3rem;
+            border: none;
+            font-size: large;
+            text-align: center;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            padding: 10px;
+            
+        }
+        .submit button{
+            font-size: larger;
+            background-color: rgb(72, 146, 72);
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .submit button:hover{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sudoku Game</h2>
+    <div class="t"></div>
+   <div class="main">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+   </div> 
+   <div class="submit"><button type="submit">Submit Sudoku</button></div>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+.red{
+    color: crimson;
+}
+.yellow{
+    color: #d7fd02;
+}
+
+
+@keyframes dice {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+body{
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#atimain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1,h2{
+    text-align: center;
+}
+.paso{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 200px;
+    right: 100px;
+    color: transparent;
+    border: transparent;
+    background-color: transparent;
+}
+.opacity{
+    opacity: 0.5;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.img2{
+    width: 140px;
+    height: 140px;
+}
+
+.paso:hover{
+    width: 120px;
+    height: 120px;
+    box-shadow:10px 5px 5px black;
+}
+.paso:hover img{
+    width: 120px;
+    height: 120px;
+}
+.paso:hover .img2{
+    width: 140px;
+    height: 140px;
+}
+
+.main{
+    background-image: url("bg.jpg");
+    width: 730px;
+    margin: auto;
+    height: 730px;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(10,72px);
+    grid-template-rows: repeat(10,72px);
+    background-size: 720px 720px;
+}
+.h2{
+    position: relative;
+    top: 30vh;
+    right: 10vw;
+}
+
+.main div{
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid black; */
+    color: transparent;
+}
+
+.c1{
+    background: #e80606;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    box-shadow: 2px 2px 4px black;
+    
+}
+.c2{
+    background: #d7fd02;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    box-shadow: 2px 2px 4px black;
+}
+
+.points{
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+}
+
+@media (max-width : 960px) {
+    .main{
+        background-image: url("bg.jpg");
+        max-width: 650px;
+        max-height: 650px;
+        grid-template-columns: repeat(10,60px);
+        grid-template-rows: repeat(10,60px);
+        background-size: 600px 600px;
+    }
+    
+    
+    .main div{
+        width: 60px;
+        height: 60px;
+    }
+    .paso{
+        position: relative;
+        left: 10vw;
+        width: 80px;
+        height: 80px;
+    }
+    .paso:hover{
+        width: 87px;
+        height: 87px;
+        box-shadow:10px 5px 5px black;
+    }
+    .paso:hover img{
+        width: 85px;
+        height: 85px;
+    }
+    .paso:hover .img2{
+        width: 90px;
+        height: 90px;
+    }
+    
+}
+
+@media (max-width : 700px) {
+    .main{
+        background-image: url("bg.jpg");
+        width: 420px;
+        height: 420px;
+        grid-template-columns: repeat(10,40px);
+        grid-template-rows: repeat(10,40px);
+        background-size: 400px 400px;
+        position: relative;
+        top: 20px;
+    }
+    .h2{
+        top: 5vh;
+        text-align: center;
+    }
+    .main div{
+        width: 40px;
+        height: 40px;
+    }
+    .paso-box{
+        position: absolute;
+        left: 50%;
+        top: 60%;
+    }
+    .paso{
+        position: relative;
+        width: 50px;
+        margin: auto;
+        height: 50px;
+        top: 30px;
+        left: 0;
+    }
+    .paso img{
+        width: 50px;
+        height: 50px;
+    }
+    #atimain{
+        flex-direction: column;
+    }
+}

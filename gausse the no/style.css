@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    border: 2px solid;
+}
+
+button{
+    margin: 2vw;
+}
+
+.game{
+    background: rgb(138, 93, 180);
+    color: white;
+}
